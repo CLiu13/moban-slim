@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      
+        Slimish-Jinja Example
+      
+    </title>
+    <meta  content="template language" name="keywords" />
+    <script>
+      
+    </script>
+  </head>
+  <body id="home" class="fluid liquid">
+    <h1>
+      This is my header.
+    </h1>
+    <div id="contents" class="main">
+      <div> </div>
+      <p>Dynamic my_content</p>
+      <p>
+        Nested dyanmic  my_content
+Left indent is preserved in text blocks.
+      </p>
+      <p>
+        <a href="http://www.google.com">Google</a>
+      </p>
+    </div>
+    <ul  class="my_class">
+      
+        <li>foo</li>
+        
+          <li>bar</li>
+        
+      
+        <li>bar</li>
+        
+          <li>baz</li>
+        
+      
+        <li>baz</li>
+        
+      
+    </ul>
+  </body>
+</html>

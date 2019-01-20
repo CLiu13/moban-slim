@@ -6,4 +6,4 @@ flake8
 moban
 black;python_version>="3.6"
 isort;python_version>="3.6"
-git+https://github.com/cliu13/slimish-jinja2@python3
+slimish-jinja>=1.1.0
