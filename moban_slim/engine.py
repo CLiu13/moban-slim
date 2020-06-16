@@ -1,4 +1,4 @@
-from jinja2 import Template, Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, Template
 from slimish_jinja import SlimishExtension
 
 
@@ -7,7 +7,7 @@ class EngineSlim(object):
         self.template_dirs = template_dirs
         self.jj2_env = Environment(
             loader=FileSystemLoader(template_dirs),
-            extensions=[SlimishExtension]
+            extensions=[SlimishExtension],
         )
         self.jj2_env.slim_debug = True
 

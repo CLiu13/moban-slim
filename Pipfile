@@ -7,5 +7,5 @@ name = 'pypi'
 python_version= '3.6'
 
 [packages]
-    git+https://github.com/cliu13/slimish-jinja2@python3
+    git+https://github.com/cliu13/slimish-jinja2@python3 = "*"
     lml>=0.0.7

@@ -3,10 +3,10 @@ organisation: "moremoban"
 author: "Charlie Liu, C.W et al"
 contact: "wangc_2011@hotmail.com"
 company: "Moremoban members and its contributors"
-version: "0.0.1dev"
-current_version: "0.0.1dev"
-release: "0.0.1dev"
-copyright_year: 2018
+version: "0.0.2"
+current_version: "0.0.2"
+release: "0.0.2"
+copyright_year: 2018-2020
 license: MIT
 dependencies:
   - git+https://github.com/cliu13/slimish-jinja2@python3

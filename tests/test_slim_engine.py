@@ -1,7 +1,8 @@
 import os
 
-from nose.tools import eq_
 from moban.plugins import ENGINES, BaseEngine
+from nose.tools import eq_
+
 from moban_slim.engine import EngineSlim
 
 
@@ -20,10 +21,12 @@ def test_slim_file_tests():
         # In some versions of python, the attributes of the
         # meta tag on line 9 of file_tests.slim are flipped.
         # To fix this, we check for both cases.
-        expected_path = os.path.join("tests", "fixtures", "slim_tests",
-                                     "expected_output.txt")
-        expected_path_2 = os.path.join("tests", "fixtures", "slim_tests",
-                                       "expected_output_2.txt")
+        expected_path = os.path.join(
+            "tests", "fixtures", "slim_tests", "expected_output.txt"
+        )
+        expected_path_2 = os.path.join(
+            "tests", "fixtures", "slim_tests", "expected_output_2.txt"
+        )
         with open(expected_path) as expected_file:
             with open(expected_path_2) as expected_file_2:
                 expected = expected_file.read()

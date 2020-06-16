@@ -1,0 +1,15 @@
+name: moban-slim
+organisation: moremoban
+releases:
+- changes:
+  - action: Updated
+    details:
+    - "`#1`: support moban v0.3.8"
+  date: 20-01-2019
+  version: 0.0.2
+- changes:
+  - action: First release
+    details:
+    - render slim files for moban
+  date: 30-11-2018
+  version: 0.0.1
