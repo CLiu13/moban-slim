@@ -8,6 +8,9 @@ from jinja2_fsloader import FSLoader
 
 
 class EngineSlim(object):
+    ACTION_IN_PRESENT_CONTINUOUS_TENSE = "Slimming"
+    ACTION_IN_PAST_TENSE = "Slimmed"
+
     def __init__(self, template_fs, options: Dict = None):
         self.template_fs = template_fs
         self.jj2_env = Environment(

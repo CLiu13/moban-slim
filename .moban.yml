@@ -8,14 +8,11 @@ configuration:
 targets:
   - README.rst: CUSTOM_README.rst.jj2
   - setup.py: custom_setup.py.jj2
-  - requirements.txt: requirements.txt.jj2
   - "tests/requirements.txt": "tests/custom_requirements.txt.jj2"
   - "docs/source/conf.py": "docs/conf.py_t"
-  - test.sh: test.script.jj2
   - "moban_slim/_version.py": "_version.py.jj2"
   - .gitignore: gitignore.jj2
   - .travis.yml: custom_travis.yml.jj2
-  - Pipfile: Pipfile.jj2
   - output: CHANGELOG.rst
     configuration: changelog.yml
     template: CHANGELOG.rst.jj2
