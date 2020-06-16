@@ -1,21 +1,22 @@
 import os
 
-from moban.plugins import ENGINES, BaseEngine
+from moban.core import ENGINES, plugins
 from nose.tools import eq_
 
 from moban_slim.engine import EngineSlim
 
+plugins.make_sure_all_pkg_are_loaded()
+
 
 def test_slim_engine_type():
     engine = ENGINES.get_engine("slim", [], "")
-    assert engine.engine_cls == EngineSlim
-    pass
+    assert engine.engine.__class__.__name__ == "EngineSlim"
 
 
 def test_slim_file_tests():
     output = "test.txt"
     path = os.path.join("tests", "fixtures", "slim_tests")
-    engine = BaseEngine([path], path, EngineSlim)
+    engine = ENGINES.get_engine("slim", [path], path)
     engine.render_to_file("file_tests.slim", "file_tests.json", output)
     with open(output, "r") as output_file:
         # In some versions of python, the attributes of the
@@ -43,7 +44,7 @@ def test_slim_string_template():
     string_template = "{{ content }}"
     output = "test.txt"
     path = os.path.join("tests", "fixtures", "slim_tests")
-    engine = BaseEngine([path], path, EngineSlim)
+    engine = ENGINES.get_engine("slim", [path], path)
     engine.render_string_to_file(string_template, "file_tests.json", output)
     with open(output, "r") as output_file:
         expected = "my_content"

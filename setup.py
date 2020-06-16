@@ -41,6 +41,7 @@ CLASSIFIERS = [
 INSTALL_REQUIRES = [
     'slimish-jinja>=1.1.0',
     'lml>=0.0.7',
+    'jinja2-fsloader>=0.2.0',
 ]
 SETUP_COMMANDS = {}
 
