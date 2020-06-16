@@ -39,7 +39,7 @@ CLASSIFIERS = [
 ]
 
 INSTALL_REQUIRES = [
-    'git+https://github.com/cliu13/slimish-jinja2@python3',
+    'slimish-jinja>=1.1.0',
     'lml>=0.0.7',
 ]
 SETUP_COMMANDS = {}

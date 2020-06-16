@@ -10,8 +10,8 @@ moban-slim
 
 
 
-With `slimish-jinja2 for Python 3 <git+https://github.com/cliu13/slimish-jinja2@python3>`_, this library allow moban users to
-have slim template in their next documentation endeavour. 
+With `slimish-jinja2 for Python 3 <slimish-jinja>=1.1.0>`_, this library allow moban users to
+have slim template in their next documentation endeavour.
 
 Installation
 ================================================================================
